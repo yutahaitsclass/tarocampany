@@ -1,0 +1,82 @@
+header .header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  header .header-wrapper .header-logo {
+    text-align: center;
+    flex-basis: 20%; }
+    header .header-wrapper .header-logo img {
+      width: 100px; }
+  @media (min-width: 760px) {
+    header .header-wrapper ul.header-menu {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap; }
+      header .header-wrapper ul.header-menu li {
+        text-align: center;
+        padding: 25px 20px;
+        transition: all 0.5s; }
+        header .header-wrapper ul.header-menu li:hover {
+          background-color: rgba(0, 0, 0, 0.1); }
+        header .header-wrapper ul.header-menu li a {
+          color: black;
+          text-decoration: none; } }
+  @media (min-width: 0) and (max-width: 760px) {
+    header .header-wrapper ul.header-menu {
+      display: none; } }
+
+main .main-wrapper .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  @media (min-width: 760px) {
+    main .main-wrapper .main-content .main-content_image {
+      flex-basis: 33%; }
+      main .main-wrapper .main-content .main-content_image img {
+        width: 100%; } }
+  @media (min-width: 0) and (max-width: 760px) {
+    main .main-wrapper .main-content .main-content_image {
+      flex-basis: 100%; }
+      main .main-wrapper .main-content .main-content_image img {
+        width: 100%; } }
+
+.caption {
+	font-size:		130%;
+	text-align: 	center;
+	color:			#fff;
+}
+.hover_text {
+	position:		absolute;
+	top:			0;
+	left:			0;
+	width: 100%;
+	height: 100%;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+}
+
+.hover_cap {
+	overflow:hidden;
+	position:relative;
+}
+
+.hover_cap:hover .hover_text{
+	opacity:		1;	/* マスクを表示する */
+	padding-top:		30%;	/* ホバーで下にずらす */
+}
+
+footer .footer-wrapper {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: black;
+  text-align: center; }
+  footer .footer-wrapper .footer-logo img {
+    width: 100px; }
+  footer .footer-wrapper p {
+    color: white;
+    font-size: 12px;
+    font-weight: 100; }
+
+/*# sourceMappingURL=menu.css.map */
