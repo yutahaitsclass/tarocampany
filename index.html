@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+  </head>
+
+<body>
+  <div id="loader-bg">
+    <div id="loader">
+        <img src="image/TaRO_LOGO_no_color_campany.png" width="180px" height="auto" alt="Now Loading..." />
+    </div>
+  </div>
+
+  <header>
+      <div class="header-wrapper">
+          <div class="header-logo">
+              <img src="image/TaRO_LOGO_no_color_campany.png" alt="">
+          </div>
+          <header>
+              <div id="nav-drawer">
+                  <input id="nav-input" type="checkbox" class="nav-unshown">
+                  <label id="nav-open" for="nav-input"><span></span></label>
+                  <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                  <div id="nav-content">
+                      <ul class="nav-menu">
+                          <li><a href="">About Us</a></li>
+                          <li><a href="">Message</a></li>
+                          <li><a href="">Entry</a></li>
+                          <li><a href="">News</a></li>
+                          <li><a href="">Interview</a></li>
+
+                      </ul>
+                  </div>
+              </div>
+          </header>
+          <ul class="header-menu">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Message</a></li>
+              <li><a href="">Entry</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Interview</a></li>
+          </ul>
+
+      </div>
+  </header>
+
+  <main>
+    <div class="main-wrapper">
+      <div class="main-content">
+        
+        <div class="main-content_image">
+          <div class="hover_cap" style="position: relative;">
+            <a href="">
+              <img src="image/menu1.jpg" alt="" />
+              <div style="position:absolute; top:90%; left:5%; color:#FFFFFF;">
+                第一弾：開発者インタビュー
+              </div>
+              <div class="hover_text">
+                <div class="caption" style="color:#FFFFFF;">
+                  気になる本サイトの作成者へインタビュー！
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="main-content_image">
+          <div class="hover_cap" style="position: relative;">
+            <a href="">
+              <img src="image/menu2.jpg" alt="" />
+              <div style="position:absolute; top:90%; left:5%; color:#FFFFFF;">
+                第二弾：TaRO'sCAP参加者インタビュー
+              </div>
+              <div class="hover_text">
+                <div class="caption" style="color:#FFFFFF;">
+                  TaRO'sCAPの常連！<br>優勝経験もある方々にインタビュー！
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="main-content_image">
+          <div class="hover_cap" style="position: relative;">
+            <a href="">
+              <img src="image/menu3.jpg" alt="" />
+              <div style="position:absolute; top:90%; left:5%; color:#FFFFFF;">
+                第三弾：TaRO'sCAP女性参加者インタビュー
+              </div>
+              <div class="hover_text">
+                <div class="caption" style="color:#FFFFFF;">
+                  TaRO'sCAPは女性参加者も多数！
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="main-content_image">
+          <div class="hover_cap" style="position: relative;">
+            <a href="">
+              <img src="image/menu4.jpg" alt="" />
+              <div style="position:absolute; top:90%; left:5%; color:#FFFFFF;">
+                エンジニアインタビュー 第二弾
+              </div>
+              <div class="hover_text">
+                <div class="caption" style="color:#FFFFFF;">
+                  Coming Soon...
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="main-content_image">
+          <div class="hover_cap" style="position: relative;">
+            <a href="">
+              <img src="image/menu4.jpg" alt="" />
+              <div style="position:absolute; top:85%; left:5%; color:#FFFFFF;">
+                “TaRO’s CAPでの出会いから・・・”<br>東大ALDIC 野村/東大レモンスマッシュ 板倉
+              </div>
+              <div class="hover_text">
+                <div class="caption" style="color:#FFFFFF;">
+                  Coming Soon...
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="main-content_image">
+          <div class="hover_cap" style="position: relative;">
+            <a href="">
+              <img src="image/menu4.jpg" alt="" />
+              <div style="position:absolute; top:80%; left:5%; color:#FFFFFF;">
+                社会人インタビュー or <br>"理学療法士が見据える明るいスポーツ"<br>プロトレーナー&nbsp;犬飼耕平
+              </div>
+              <div class="hover_text">
+                <div class="caption" style="color:#FFFFFF;">
+                  Coming Soon...
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-logo">
+        <img src="image/TaRO_LOGO_no_color_campany2_reverse.png" alt="" />
+      </div>
+      <p>Copyright©2018 TaRO&CAMPANY ALL Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+      $(function () {
+          var h = $(window).height();
+
+          $('#wrap').css('display', 'none');
+          $('#loader-bg ,#loader').height(h).css('display', 'block');
+      });
+
+      $(window).load(function () { //全ての読み込みが完了したら実行
+          $('#loader-bg').delay(1000).fadeOut(1000);
+          $('#loader').delay(1000).fadeOut(1000);
+          $('#wrap').css('display', 'block');
+      });
+
+      //10秒たったら強制的にロード画面を非表示
+      $(function () {
+          setTimeout('stopload()', 10000);
+      });
+
+      function stopload() {
+          $('#wrap').css('display', 'block');
+          $('#loader-bg').delay(900).fadeOut(800);
+          $('#loader').delay(600).fadeOut(300);
+      }
+  </script>
+</body>
+
+</html>
